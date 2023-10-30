@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Jokenpô</title>
     <link rel="shortcut icon" href="assets/favicon-anderdev-cinza-verde.ico">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div id="game" class="container">
+        GAME
+    </div>
+    <div id="winner" class="cpntainer end-screen none">
+        GANHOU
+    </div>
+    <div id="loser" class="container end-screen center">
+        <h3>Você Perdeu!</h3>
+        <button onclick="newGame()">Jogar Novamente</button>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
