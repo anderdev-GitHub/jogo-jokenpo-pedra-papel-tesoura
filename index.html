@@ -15,12 +15,26 @@
 
 <body>
     <div id="game" class="container">
-        GAME
+        
+        <div class="title-game">
+            <img class="logo-naruto" src="assets/images/logo-naruto.png" alt="Logo do nome Naruto">
+           <p>Jokenpô</p>
+        </div>
+        <div class="bloco">
+            <div class="label bg-green">USER</div>
+            <div class="label bg-red">PC</div>
+            <div id="contador" class="placar">
+                0:0
+            </div>
+        </div>
     </div>
-    <div id="winner" class="cpntainer end-screen none">
-        GANHOU
+    <div id="winner" class="container end-screen none">
+        <img class="sasuke-naruto-winner" src="assets/images/sasuke_naruto_winner.gif" alt="gif do Sasuke e Naruto felizes e sorrindo">
+        <h3>Você Ganhou!</h3>
+        <button onclick="newGame()">Jogar Novamente</button>
     </div>
-    <div id="loser" class="container end-screen center">
+    <div id="loser" class="container end-screen none">
+        <img class="sasuke-naruto-loser" src="assets/images/sasuke_naruto_loser.gif" alt="Gif do Sasuke sacudindo o Naruto de um jeito engraçada, chamando atenão de por um erro cometido pelo Naruto">
         <h3>Você Perdeu!</h3>
         <button onclick="newGame()">Jogar Novamente</button>
     </div>
