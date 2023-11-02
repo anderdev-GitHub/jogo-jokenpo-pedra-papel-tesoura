@@ -24,8 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'poppins', sans-serif;
-    background: url('assets/images/background_pixilart_naruto_x_sasuke.gif') no-repeat center center fixed;
-    background-color: var(--dark);
+    background: url('assets/images/background_pixilart_naruto_x_sasuke.gif') no-repeat center center / cover;
 }
 
 .container {
