@@ -31,9 +31,24 @@
             <div id="player">
                 <img src="assets/images/rock.png" alt="mão de pedra">
             </div>
-            <div id="cpu" class="reverse">
-                <img src="assets/images/rock.png" alt="mão de pedra">
-            </div>
+            <div id="cpu" class="reverse"></div>
+        </div>
+        <h2>Escolha seu movimento</h2>
+        <div class="buttons">
+            <label>
+                <input  type="radio" onclick="reset()" name="play" value="rock" checked>
+                <button class="btn"><img src="assets/images/rock.png" alt="mão de pedra"></button>
+            </label>
+
+            <label>
+                <input  type="radio" onclick="reset()" name="play" value="paper" checked>
+                <button class="btn"><img src="assets/images/paper.png" alt="mão de papel"></button>
+            </label>
+
+            <label>
+                <input  type="radio" onclick="reset()" name="play" value="scissor" checked>
+                <button class="btn"><img src="assets/images/scissor.png" alt="mão de tesoura"></button>
+            </label>
         </div>
     </div>
     <div id="winner" class="container end-screen none">
