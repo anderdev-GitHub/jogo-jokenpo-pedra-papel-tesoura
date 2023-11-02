@@ -74,6 +74,9 @@ body {
 }
 
 .title-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--orange);
     color: var(--white);
     font-size: 24px;
@@ -82,8 +85,8 @@ body {
     border-top-right-radius: 10px;
 }
 
-.logo-naruto {
-    width: 100px;
+.title-game img {
+    width: 30px;
 }
 
 .bloco {
@@ -106,6 +109,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 48px;
     font-weight: bold;
+    background: url(assets/images/luta_pixilart_naruto_x_sasuke.gif) no-repeat center center / cover;
 }
 
 .label {
@@ -192,4 +196,23 @@ label {
 
 [type=radio]:checked + button {
     background-color: var(--orange);
+}
+
+.btn-play, .btn-play:disabled:hover {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    background-color: var(--grey);
+    color: var(--dark);
+    margin-top: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-play:hover {
+    background-color: var(--orange);
+    color: var(--white);
 }
