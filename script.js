@@ -32,3 +32,33 @@ const playCPU = () => {
     imgCpu.innerHTML = "<img src='assets/images/" + player2 + ".png'>"
     analyze()
 }
+
+const analyze = () => {
+    
+    let win = "0"
+
+    if (player1 == player2) {
+
+    } else if (player1 == "rock") {
+        win = player2 == 'scissor' ? 1 : -1
+    } else if (player1 == "paper") {
+        win = player2 == 'rock' ? 1 : -1
+    } else if (player1 == "scissor") {
+        win = player2 == 'paper' ? 1 : -1
+    }
+
+    if (win == 0) {
+
+    } else if (win > 0){
+        contPlayer = contPlayer + 1
+        audioWin.play()
+    } else {
+        contCpu = contCpu + 1
+        audioLose.play()
+    }
+
+    contador.innerHTML = contPlayer + ":" + contCpu
+
+    playing.dosable = false
+
+}
