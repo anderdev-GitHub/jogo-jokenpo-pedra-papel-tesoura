@@ -34,16 +34,18 @@ const playCPU = () => {
 }
 
 const analyze = () => {
-    
+
+    playing.desabled = true
+
     let win = "0"
 
     if (player1 == player2) {
 
     } else if (player1 == "rock") {
         win = player2 == 'scissor' ? 1 : -1
-    } else if (player1 == "paper") {
+    } else if (player1 == 'paper') {
         win = player2 == 'rock' ? 1 : -1
-    } else if (player1 == "scissor") {
+    } else if (player1 == 'scissor') {
         win = player2 == 'paper' ? 1 : -1
     }
 
@@ -65,12 +67,12 @@ const analyze = () => {
     }
 
     if (contCpu >= 5) {
-        winner.classList.remove('none')
-        winner.classList.add('center')
+        loser.classList.remove('none')
+        loser.classList.add('center')
     }
 
     setTimeout( () => {
-        playing.disable = false
+        playing.Disabled = false
         clear();
     }, 2000)
 }
