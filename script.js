@@ -59,6 +59,34 @@ const analyze = () => {
 
     contador.innerHTML = contPlayer + ":" + contCpu
 
-    playing.dosable = false
+    if (contPlayer >= 5) {
+        winner.classList.remove('none')
+        winner.classList.add('center')
+    }
 
+    if (contCpu >= 5) {
+        winner.classList.remove('none')
+        winner.classList.add('center')
+    }
+
+    setTimeout( () => {
+        playing.disable = false
+        clear();
+    }, 2000)
 }
+
+    const clear = () => {
+        imgCpu.innerHTML = ""
+        imgPlayer.innerHTML = ""
+    }
+
+    const newGame = () => {
+        contador.innerHTML = "0.0"
+        contCpu = 0
+        contPlayer = 0
+        reset()
+        winner.classList.add('none')
+        winner.classList.remove('center')
+        loser.classList.add('none')
+        loser.classList.remove('center')
+    }
