@@ -14,18 +14,22 @@
 </head>
 
 <body>
-<div id="custom-audio-controls">
-  <button id="volume-button">
-    🔊
-  </button>
-  <audio id="naruto-theme" src="/assets/sounds/naruto-theme.wav" autoplay loop></audio>
-</div>
+    <div id="custom-audio-controls">
+        <p>Clique aqui</p>
+        <button id="music-button">
+            ▶️
+        </button>
+        <button id="volume-button">
+            🔊
+        </button>
+        <audio id="naruto-theme" src="assets/sounds/naruto-theme.wav" autoplay loop></audio>
+    </div>
 
-    <div id="game" class="container">   
+    <div id="game" class="container">
         <div class="title-game">
             <img src="assets/images/sasuke-boladao.png" alt="Logo do nome Naruto">
-           <p>Jokenpô</p>
-           <img src="assets/images/naruto-boladao.png" alt="Logo do nome Naruto">
+            <p>Jokenpô</p>
+            <img src="assets/images/naruto-boladao.png" alt="Logo do nome Naruto">
         </div>
         <div class="bloco">
             <div class="label bg-green">PLAYER</div>
@@ -43,17 +47,17 @@
         <h2>Escolha seu movimento</h2>
         <div class="buttons">
             <label>
-                <input  type="radio" onclick="reset()" name="play" value="rock" checked>
+                <input type="radio" onclick="reset()" name="play" value="rock" checked>
                 <button class="btn"><img src="assets/images/rock.png" alt="mão de pedra"></button>
             </label>
 
             <label>
-                <input  type="radio" onclick="reset()" name="play" value="paper" checked>
+                <input type="radio" onclick="reset()" name="play" value="paper" checked>
                 <button class="btn"><img src="assets/images/paper.png" alt="mão de papel"></button>
             </label>
 
             <label>
-                <input  type="radio" onclick="reset()" name="play" value="scissor" checked>
+                <input type="radio" onclick="reset()" name="play" value="scissor" checked>
                 <button class="btn"><img src="assets/images/scissor.png" alt="mão de tesoura"></button>
             </label>
         </div>
@@ -62,12 +66,14 @@
         </div>
     </div>
     <div id="winner" class="container end-screen none">
-        <img class="sasuke-naruto-winner" src="assets/images/sasuke_naruto_winner.gif" alt="gif do Sasuke e Naruto felizes e sorrindo">
+        <img class="sasuke-naruto-winner" src="assets/images/sasuke_naruto_winner.gif"
+            alt="gif do Sasuke e Naruto felizes e sorrindo">
         <h3>Você Ganhou!</h3>
         <button onclick="newGame()">Jogar Novamente</button>
     </div>
     <div id="loser" class="container end-screen none">
-        <img class="sasuke-naruto-loser" src="assets/images/sasuke_naruto_loser.gif" alt="Gif do Sasuke sacudindo o Naruto de um jeito engraçada, chamando atenão de por um erro cometido pelo Naruto">
+        <img class="sasuke-naruto-loser" src="assets/images/sasuke_naruto_loser.gif"
+            alt="Gif do Sasuke sacudindo o Naruto de um jeito engraçada, chamando atenão de por um erro cometido pelo Naruto">
         <h3>Você Perdeu!</h3>
         <button onclick="newGame()">Jogar Novamente</button>
     </div>

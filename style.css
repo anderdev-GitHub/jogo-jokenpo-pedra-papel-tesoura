@@ -16,7 +16,8 @@ html, body {
     --green: #11780f;
     --red: #d2300c;
     --grey: #d9d9d9;
-    --dark-transparent: rgba(255,255,255,.5);
+    --dark-transparent: rgba(255, 255, 255, 0.5);
+    --dark-orange-transparent: rgba(245, 170, 8, 0.5);
 }
 
 body {
@@ -217,18 +218,30 @@ label {
 }
 
 #custom-audio-controls {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: fixed;
     top: 5px;
     right: 5px;
     z-index: 999;
     border-radius: 50%;
-    padding: 5px;
-    background: var(--orange);
+    padding: 15px;
+    background: var(--dark-orange-transparent);
   }
   
-  #volume-button {
-    font-size: 50px;
+  #volume-button, #music-button {
+    font-size: 25px;
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  #volume-button:hover, #music-button:hover {
+    opacity: .7;
+  }
+
+  #custom-audio-controls p {
+    font-size: 10px;
+    font-weight: bolder;
   }

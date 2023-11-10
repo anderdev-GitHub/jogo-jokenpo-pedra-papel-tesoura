@@ -1,12 +1,20 @@
 let contPlayer = 0
 let contCpu = 0
 
-const narutoTheme = document.getElementById("naruto-theme");
-const volumeButton = document.getElementById("volume-button");
+const narutoTheme = document.getElementById("naruto-theme")
+const volumeButton = document.getElementById("volume-button")
+const musicButton = document.getElementById("music-button")
+
+musicButton.addEventListener("click", () => {
+    if(narutoTheme.play()) {
+        document.getElementById("music-button").remove();
+    }
+})
 
 volumeButton.addEventListener("click", () => {
   narutoTheme.muted = !narutoTheme.muted;
   updateVolumeIcon();
+  narutoTheme.play()
 });
 
 const updateVolumeIcon = () => {
