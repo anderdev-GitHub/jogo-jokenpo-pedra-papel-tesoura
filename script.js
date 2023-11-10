@@ -1,6 +1,24 @@
 let contPlayer = 0
 let contCpu = 0
 
+const audio = document.getElementById("audio");
+const volumeButton = document.getElementById("volume-button");
+
+volumeButton.addEventListener("click", () => {
+  audio.muted = !audio.muted;
+  updateVolumeIcon();
+});
+
+const updateVolumeIcon = () => {
+  if (audio.muted) {
+    volumeButton.innerText = "🔇";
+  } else if (audio.volume > 0.6) {
+    volumeButton.innerText = "🔊";
+  } 
+}
+
+updateVolumeIcon();
+
 const imgPlayer = document.getElementById("player")
 const imgCpu = document.getElementById("cpu")
 const playing = document.getElementById("playing")
