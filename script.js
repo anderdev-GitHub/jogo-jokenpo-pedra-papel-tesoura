@@ -8,8 +8,15 @@ const contador = document.getElementById("contador")
 const winner = document.getElementById("winner")
 const loser = document.getElementById("loser")
 
-const audioWin = new Audio("assets/sounds/winning.wav")
-const audioLose = new Audio("assets/sounds/losing.wav")
+const audioWin = new Audio("assets/sounds/sfx-winning.wav")
+const audioLose = new Audio("assets/sounds/sfx-losing.wav")
+audioWin.volume = 0.3;
+audioLose.volume = 0.3;
+
+const audioScreenWin = new Audio("assets/sounds/sfx-screen-winning.wav")
+const audioScreenLose = new Audio("assets/sounds/sfx-screen-losing.wav")
+audioScreenWin.volume = 0.3;
+audioScreenLose.volume = 0.3;
 
 let player1 = ""
 let player2 = ""
@@ -64,11 +71,13 @@ const analyze = () => {
     if (contPlayer >= 5) {
         winner.classList.remove('none')
         winner.classList.add('center')
+        audioScreenWin.play()
     }
 
     if (contCpu >= 5) {
         loser.classList.remove('none')
         loser.classList.add('center')
+        audioScreenLose.play()
     }
 
     setTimeout( () => {
