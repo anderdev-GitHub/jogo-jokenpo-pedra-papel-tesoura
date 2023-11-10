@@ -7,25 +7,24 @@ const musicButton = document.getElementById("music-button")
 
 musicButton.addEventListener("click", () => {
     if(narutoTheme.play()) {
-        document.getElementById("music-button").remove();
+        document.getElementById("music-button").remove()
     }
 })
 
 volumeButton.addEventListener("click", () => {
-  narutoTheme.muted = !narutoTheme.muted;
-  updateVolumeIcon();
-  narutoTheme.play()
+  narutoTheme.muted = !narutoTheme.muted
+  updateVolumeIcon()
 });
 
 const updateVolumeIcon = () => {
   if (narutoTheme.muted) {
-    volumeButton.innerText = "🔇";
+    volumeButton.innerText = "🔇"
   } else if (narutoTheme.volume > 0.6) {
-    volumeButton.innerText = "🔊";
+    volumeButton.innerText = "🔊"
   } 
 }
 
-updateVolumeIcon();
+updateVolumeIcon()
 
 const imgPlayer = document.getElementById("player")
 const imgCpu = document.getElementById("cpu")
