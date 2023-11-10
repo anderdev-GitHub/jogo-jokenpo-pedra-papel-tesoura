@@ -224,11 +224,9 @@ label {
     position: fixed;
     top: 5px;
     right: 5px;
-    z-index: 999;/* 
-    border-radius: 50%; */
+    z-index: 999;
     padding-top: 20px;
     padding-right: 10px;
-    /* background: var(--dark-orange-transparent); */
   }
   
   #volume-button, #music-button {
@@ -245,7 +243,6 @@ label {
   #custom-audio-controls p {
     font-size: 10px;
     font-weight: bolder;
-   /*  color: var(--white); */
     background: var(--dark-orange-transparent);
     border-radius: 5px;
   }
