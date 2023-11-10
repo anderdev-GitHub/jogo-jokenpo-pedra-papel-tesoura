@@ -1,18 +1,18 @@
 let contPlayer = 0
 let contCpu = 0
 
-const audio = document.getElementById("audio");
+const narutoTheme = document.getElementById("naruto-theme");
 const volumeButton = document.getElementById("volume-button");
 
 volumeButton.addEventListener("click", () => {
-  audio.muted = !audio.muted;
+  narutoTheme.muted = !narutoTheme.muted;
   updateVolumeIcon();
 });
 
 const updateVolumeIcon = () => {
-  if (audio.muted) {
+  if (narutoTheme.muted) {
     volumeButton.innerText = "🔇";
-  } else if (audio.volume > 0.6) {
+  } else if (narutoTheme.volume > 0.6) {
     volumeButton.innerText = "🔊";
   } 
 }
