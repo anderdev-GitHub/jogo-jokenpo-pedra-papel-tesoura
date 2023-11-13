@@ -229,14 +229,14 @@ label {
     padding-right: 10px;
   }
   
-  #volume-button, #music-button {
+  #volume-button {
     font-size: 25px;
     background: none;
     border: none;
     cursor: pointer;
   }
 
-  #volume-button:hover, #music-button:hover {
+  #volume-button:hover {
     font-size: 22px;
   }
 
