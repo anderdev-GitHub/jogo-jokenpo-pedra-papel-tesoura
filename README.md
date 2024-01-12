@@ -19,7 +19,9 @@
 
 <br>
 
-<img alt="Layout" src="./assets/img-project.png">
+<p align="center">
+<img alt="Layout" src="assets/demo-jokenpo.gif">
+</p>
 <br>
 
 
